@@ -1,5 +1,6 @@
-.App {
-  text-align: center;
+.App {  
+  background-color: #61dafb;
+  background-image: linear-gradient(0deg,#61dafb,#61dafb, #6a9ab6);
 }
 
 .App-logo {
@@ -29,4 +30,153 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.left {
+  left: 0;
+  width:20%;
+}
+
+.right {
+  right: 0;
+  width: 80%;
+}
+
+.TripList-container {
+  margin-top: 60px;
+  background: linear-gradient(
+    35deg,
+    #ccffff,
+    #ffcccc
+  );
+  display: flex;
+}
+
+.TripList-item {
+  height: 20%;
+  width: 100%;
+}
+
+.Trip-container {
+  width: 360px;
+  height: 640px;
+  margin: auto;
+  display: flex;
+  position: relative;
+  text-align: center;
+  margin-top: 60px;
+  border-radius: 25px;
+  background: linear-gradient(
+    35deg,
+    #ccffff,
+    #ffcccc
+  );
+}
+
+.Card-yes {
+  animation-name: rotationRight;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+}
+
+.Card-no {
+  animation-name: rotationLeft;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+}
+
+@keyframes rotationRight {    
+  0% {
+    left: 0px;
+    transform: rotate(0deg);
+  }
+  100% {
+    left: 100px;
+    transform: rotate(20deg);
+    opacity: 0.35;
+  }
+}
+
+@keyframes rotationLeft {    
+  0% {
+    left: 0px;
+    transform: rotate(0deg);
+  }
+  100% {
+    left: -100px;
+    transform: rotate(-20deg);
+    opacity: 0.35;
+  }
+}
+
+.Trip-image {
+  width: 100%;
+  border-radius: 25px;
+}
+
+.Trip-text {
+  position: absolute;
+  margin-top: 480px;
+  font-size: 36px;
+  margin-left: 24px;
+  color: rgb(255, 255, 255);
+}
+
+.Navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.Navbar-item { 
+  width: 33%;
+  float: left;
+}
+
+.Navbar-link {  
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.Navbar-link:hover {  
+  background-color: #111;
+}
+
+.button {
+  display: flex;
+  margin: auto;
+  width: 50%; 
+  border-radius: 12px;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 360px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.accept { 
+  margin: 10px;
+  background-color: #baff00;
+}
+
+.accept:hover { 
+  margin: 10px;
+  background-color: #87b800;
+}
+
+.decline {
+  margin: 10px;
+  background-color: #e73838;
+}
+
+.decline:hover {
+  background-color: #af2727;
 }
