@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css?family=Kumar+One+Outline|PT+Sans+Narrow');
+@import 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:700';
+
+
+
+.App {
+  text-align: center;
+  width: 375px;
+  height: 667px;
+  background-color: #61dafb;
+  background-image: linear-gradient(0deg,#61dafb,#61dafb, #6a9ab6);
+}
+
+.title{
+  font-family: 'Source Sans Pro', sans-serif;
+  padding-bottom: 20px;
+  font-size: 40px;
+  color: #FFFFFF;
+}
+
+.firstpage{
+  padding-top: 10%;
+}
+
+
+.plane{
+  width: 90%;
+  padding-top: 250px;
+}
+
+.button1{
+  display:inline-block;
+  padding:0.35em 4em;
+  border: solid #FFFFFF;
+  border-width: 2px 0px;
+  margin:0 0.3em 0.3em 0;
+  margin-bottom: 0px;
+  box-sizing: border-box;
+  text-decoration:none;
+  font-family:'Source Sans Pro',sans-serif;
+  font-weight:300;
+  color:#FFFFFF;
+  text-align:center;
+  text-transform: uppercase;
+  transition: all 0.2s;
+}
+
+.button1:hover{
+  color:#000000;
+  background-color:#FFFFFF;
+}
+
+@media all and (max-width:30em) {
+   .button1 {
+    display: block;
+    margin: 0.4em auto;
+  }
+}
+
+.button2{
+  display:inline-block;
+  padding:0.35em 4em;
+  border: solid #FFFFFF;
+  border-width: 2px 0px;
+  border-top: 0px;
+  margin:0 0.3em 0.3em 0;
+  margin-top: 0px;
+  box-sizing: border-box;
+  text-decoration:none;
+  font-family:'Source Sans Pro',sans-serif;
+  font-weight:300;
+  color:#FFFFFF;
+  text-align:center;
+  text-transform: uppercase;
+  transition: all 0.2s;
+}
+
+.button2:hover{
+  color:#000000;
+  background-color:#FFFFFF;
+}
+
+@media all and (max-width:30em) {
+   .button2 {
+    display: block;
+    margin: 0.4em auto;
+  }
+}
