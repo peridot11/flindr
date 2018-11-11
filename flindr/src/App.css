@@ -43,7 +43,7 @@
 }
 
 .TripList-container {
-  margin-top: 60px;
+  margin-top: 40px;
   background: linear-gradient(
     35deg,
     #ccffff,
@@ -58,13 +58,13 @@
 }
 
 .Trip-container {
-  width: 360px;
-  height: 640px;
+  width: 270px;
+  height: 480px;
   margin: auto;
   display: flex;
   position: relative;
   text-align: center;
-  margin-top: 60px;
+  margin-top: 20px;
   border-radius: 25px;
   background: linear-gradient(
     35deg,
@@ -111,13 +111,14 @@
 
 .Trip-image {
   width: 100%;
+  height: 100%;
   border-radius: 25px;
 }
 
 .Trip-text {
   position: absolute;
-  margin-top: 480px;
-  font-size: 36px;
+  margin-top: 240px;
+  font-size: 24px;
   margin-left: 24px;
   color: rgb(255, 255, 255);
 }
@@ -157,7 +158,7 @@
   text-align: center;
   font-size: 28px;
   padding: 20px;
-  width: 360px;
+  width: 270px;
   transition: all 0.5s;
   cursor: pointer;
 }
