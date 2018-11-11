@@ -12,19 +12,10 @@ var Areas = [
 
 var TripText = "Canary";
 var TripDest = "Bermuda";
+var Price = "425$";
 /*
 var WIDTH = this.props.windowWidth;
 var HEIGHT = this.props.windowHeight;*/
-
-
-var accept = function accept() {
-  console.log("SUCCESS\n");
-  alert("Accepted");
-}
-
-var decline = function decline() {
-  alert("Declined");
-}
 
 export default class App extends Component {
 
@@ -45,21 +36,28 @@ export default class App extends Component {
     return ( 
       <Fragment>
         <div className="App">
-          <div id="TripList" className="TripList-container">
-            My Trips
+          <div id="Navbar" className="Navbar">
+            <div id="Swipe" className="Navbar-item"><a class="Navbar-link" href="">Home</a></div>
+            <div id="List" className="Navbar-item"><a class="Navbar-link" href="">Trips</a></div>
+            <div id="Profile" className="Navbar-item"><a class="Navbar-link" href="">Profile</a></div>
           </div>
           <div id="Trip" className={"Trip-container "+(this.state.submitted && (this.state.accept_decline ? 'Card-yes': 'Card-no'))}>
             <img className="Trip-image" src={Areas[0].uri}/> 
-            <div className="Trip-text">{TripText}</div>
-            <div className="Trip-text">{TripDest}</div>
+            <div className="Trip-text">{TripText} {TripDest} {Price}</div>
+            
           </div>
-          <div className="Buttons">
-            <button type="button" className="DeclineButton" onClick={() => this.switchAcceptance(false)}>No</button>
-            <button type="button" className="AcceptButton" onClick={() => this.switchAcceptance(true)}>Yes</button>
+          <div className="button">
+            <button type="button" className="button decline" onClick={() => this.switchAcceptance(false)}>No</button>
+            <button type="button" className="button accept" onClick={() => this.switchAcceptance(true)}>Yes</button>
           </div>
         </div>
-        {/*<div id = "Trip-text" className></div>*/}
       </Fragment>
     );
   }
 }
+/*
+
+<div className="App left">
+  <div id="TripList" className="TripList-container">
+  </div>
+</div>*/
